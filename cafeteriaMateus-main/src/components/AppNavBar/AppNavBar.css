@@ -1,0 +1,30 @@
+
+.me-auto{
+    width: 100%;
+    background-color: var(--azul);
+    display: flex;
+    align-items: center;
+    height: 120px;
+
+}
+.me-auto a{
+    margin: 10pt;
+    text-decoration: none;
+    font-size: 20pt;
+    font-weight: bold;
+    color: var(--marrom);
+    margin-right: 50px;
+}
+.me-auto a:hover{
+    color: var(--marromMedio)
+}
+.me-auto #container-img{
+    width: 42%;
+    display: flex;
+    justify-content: flex-start;
+    
+}
+.me-auto #container-img img{
+    margin-left: 100px;
+    width: 15%;
+}

@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=IBM+Plex+Sans:wght@100;500&display=swap');
+
+:root {
+  --marromClaro: #bf7e3d;
+  --bege: #edbc86;
+  --marrom: #854404;
+  --marromMedio: #ab7851;
+  --marromEscuro: #342417;
+  --azul: #b7dae0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Dancing Script', cursive;
+}
+
+h1 {
+  text-align: center;
+  font-size: 56pt;
+  color: var(--marrom);
+}
+
+h2 {
+  text-align: center;
+  font-size: 28pt;
+  color: #905f37;
+}
+
+.container-botao {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  background-color: var(--marrom);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: 'Dancing Script', cursive;
+  cursor: pointer;
+}
+
+.container-bebidas {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 24px;
+  justify-content: center;
+
+}
+.item-bebida{
+  width: 20%;
+  margin: 15px;
+  text-align: center;
+}
+.container-bebidas img{
+  width: 100%;
+  height: 65%;
+  border-radius: 25px;
+  transition: transform 0.3 ease-in-out;
+}
+.container-bebidas img:hover{
+  transform: scale(1.2);
+}
+.container-bebidas h2{
+  font-size: 18pt;
+  margin-top: 10px;
+  text-align: center;
+
+}
+
+.container-doces{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 24px;
+  justify-content: center;
+}
+.doce-item{
+ width: 20%;
+ margin: 15px;
+ text-align: center;
+}
+.container-doces img{
+  width: 100%;
+  height: 65%;
+  border-radius: 25px;
+  transition: transform 0.3 ease-in-out;
+}
+.container-doces img:hover{
+  transform: scale(1.1);
+}
+
+.container-contato{
+  width: 100%;
+  background-color: #905f37;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.contato-item{
+  width: 20%;
+  margin: 20px;
+  text-align: center;
+}
+.container-contato{
+  color: white;
+  margin-top: 23px;
+}
+.container-contato h3{
+  font-size: 24pt;
+}
+
+.container-contato p{
+  font-size: 16pt;
+}
+
