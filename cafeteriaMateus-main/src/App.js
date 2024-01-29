@@ -3,11 +3,13 @@ import React from "react";
 import Formulario from "./components/Formulario/Formulario";
 import AppNavBar from "./components/AppNavBar/AppNavBar";
 import { Button } from "bootstrap";
+import Search from "./components/Search";
 
 function App() {
   return (
     <div className="App">
       <AppNavBar />
+      <Search/>
       <h1>Café Santos</h1>
       <h2>Bebidas</h2>
 

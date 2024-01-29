@@ -1,10 +1,11 @@
 import React, {useState} from 'react';
 import axios from 'axios';
-import './seacrh.css';
+import './Search.css';
 import Loader from './components';
-import Logo from './culinaaria.png';
 
-export default function Search(){
+
+
+ function Search(){
     const [searchTerm, setSearchTerm] = useState('')
     const [searchResults, setSearchResults] = useState([])
     const [showPopup, setShowPopoup] = useState(false);
@@ -52,9 +53,12 @@ export default function Search(){
         </header>
         <div className='content-container'>
             <div className='answerImages'>
-                {carregando?(<Loader/>): searchResults.lengh === 0 ?
+                {carregando?(<Loader/>): searchResults.length === 0 ?
                  (<p> Nenhum resultado encontrado</p>): (searchResults.map((recipe)=>{
-
+                    <div className='containerImgs' key={recipe.idMeal}>
+                          <img src={recipe.strMealThumb} alt={recipe.strMeal}/>
+                          <h2>{recipe.strMeal}</h2>
+                    </div>
                  }) )}
             </div>
         </div>
@@ -63,3 +67,4 @@ export default function Search(){
     )
 }
 
+export default Search

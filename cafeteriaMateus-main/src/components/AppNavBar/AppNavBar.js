@@ -1,6 +1,7 @@
 import React from 'react'
 import {Navbar, Nav, Container} from 'react-bootstrap' ;
 import './AppNavBar.css'
+import Search from '../Search'
 
 const AppNavBar = ()=>{
     return(
@@ -14,6 +15,7 @@ const AppNavBar = ()=>{
                 <Nav.Link href="#bebidas">Bebidas</Nav.Link>
                 <Nav.Link href="#doces">Doces</Nav.Link>
                 <Nav.Link href="#contato">Contato</Nav.Link>
+                <Search/>
             </Nav>
         </Container>
     </Navbar>
